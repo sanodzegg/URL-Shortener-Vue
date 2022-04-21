@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+    h1,h2,h3,h4,h5,h6,p,span,strong {
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 10px;
+
+    .navbar__l {
+        display: flex;
+        align-items: center;
+
+        .navbar__logo {
+            color: #232127;
+            font-size: 30px;
+
+            cursor: pointer;
+        }
+
+        ul li {
+            display: inline-block;
+            list-style: none;
+        }
+
+        li {
+            padding-left: 30px;
+            color: #9e9aa7;
+            cursor: pointer;
+        }
+
+        li:active {
+            color: #232127;
+        }
+    }
+
+    .navbar__navigation {
+        color: #232127;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .navbar__r {
+
+        .navbar__login, .navbar__signup {
+            background-color: transparent;
+            text-transform: capitalize;
+
+            border: none;
+            outline: none;
+
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .navbar__signup {
+            background-color:#2acfcf;
+            color: #f5f5f5;
+        }
+
+        .navbar__signup:active {
+            background-color: #9de3e2;
+        }
+    }
+}   
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1440px;
+
+    margin: 100px auto 0 auto;
+
+    .main__landing {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        width: 100%;
+
+        .main__text {
+            color: #232127;
+    
+            h1 {
+                font-size: 65px;
+                max-width: 500px;
+                line-height: 1.2;
+            }
+    
+            h5 {
+                font-size: 17px;
+                color: #9e9aa7;
+                font-weight: 500;
+                max-width: 450px;
+            }
+    
+            button {
+                background-color: #2acfcf;
+                color: #f5f5f5;
+                
+                outline: none;
+                border: none;
+    
+                border-radius: 25px;
+    
+                padding: 10px 30px;
+                margin-top: 25px;
+    
+                cursor: pointer;
+            }
+
+            button:active {
+                background-color: #9de3e2;
+            }
+        }
+    }
+
+    .main__input {
+        margin-top: 40px;
+        width: 100%;
+        background: url("../../public/images/bg-boost-desktop.svg") #3b3054 no-repeat;
+        background-size: cover;
+        padding: 50px 0;
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .input__wrapper {
+            display: flex;
+
+            input {
+                width: 1000px;
+                outline: none;
+                border: none;
+                padding: 15px 0;
+                border-radius: 10px;
+                padding-left: 50px;
+    
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+            }
+    
+            input::placeholder {
+                color: #9e9aa7;
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+            }
+    
+            .error {
+                border: 1px solid #f46262;
+            }
+    
+            .error:nth-child(2) {
+                border: unset;
+                display: block;
+            }
+    
+            p {
+                margin-top: 10px;
+                font-size: 14px;
+                font-style: italic;
+                color: #f46262;
+                display: none;
+            }
+    
+            button {
+                font-size: 15px;
+                padding: 15px 30px;
+                border-radius: 10px;
+                text-transform: capitalize;
+                color: #f5f5f5;
+                background-color: #2acfcf;
+
+                max-height: 53px;
+    
+                border: none;
+                outline: none;
+    
+                margin-left: 20px;
+    
+                cursor: pointer;
+            }
+    
+            button:active {
+                background-color: #9de3e2;
+            }
+        }
+    }
+
+    .shortened__list {
+        width: 100%;
+
+        .shortened__wrapper {
+
+            padding: 10px 30px;
+
+            background-color: #F1F0F6;
+            border-radius: 10px;
+
+            margin: 10px 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .shortened__original {
+                color: #232127;
+            }
+
+            .shortened__l {
+                display: flex;
+                align-items: center;
+
+                .shortened__active {
+                    color: #2acfcf;
+                }
+
+                .shortened__copy {
+                    font-size: 15px;
+                    padding: 10px 30px;
+                    border-radius: 10px;
+                    text-transform: capitalize;
+                    color: #f5f5f5;
+                    background-color: #2acfcf;
+        
+                    border: none;
+                    outline: none;
+
+                    margin-left: 25px;
+        
+                    cursor: pointer;
+                }
+
+                .copied {
+                    background-color: #3b3054;
+                }
+            }
+        }
+    }
+}
+
+
+.beforeFooter {
+    width: 100%;
+    background-color: #f1f0f6;
+
+    padding-bottom: 100px;
+
+    .beforeFooter__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    
+        max-width: 1440px;
+        margin: 0 auto;
+    
+        .adv__text {
+            text-align: center;
+    
+            h1 {
+                margin-top: 100px;
+                text-align: center;
+                font-size: 35px;
+            }
+    
+            h5 {
+                margin-top: 10px;
+                max-width: 430px;
+                color: #9e9aa7;
+                font-weight: 500;
+            }
+        }
+
+        .adv__divider {
+            border: unset;
+            width: 100%;
+            height: 5px;
+            background-color: #2acfcf;
+
+            position: absolute;
+            top: 70%;
+            z-index: 10;
+        }
+    
+        .adv__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            width: 100%;
+
+            z-index: 20;
+    
+            .adv__box {
+    
+                background-color: #f5f5f5;
+
+                padding: 0 30px 40px 30px;
+                border-radius: 10px;
+    
+                .adv__logo {
+                    top: -40px;
+                    width: fit-content;
+                    border-radius: 50%;
+                    background-color: #3b3054;
+    
+                    display: flex;
+                    align-items: center;
+                    width: 80px;
+                    height: 80px;
+    
+                    position: relative;
+    
+                    svg {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+    
+                h4 {
+                    text-transform: capitalize;
+                    color: #232127;
+                    font-size: 20px;
+                }
+    
+                p {
+                    margin-top: 20px;
+                    max-width: 270px;
+                    color: #9e9aa7;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+    
+            .adv__box:nth-child(2) {
+                margin-top: 50px;
+            }
+    
+            .adv__box:nth-child(3) {
+                margin-top: 100px;
+            }
+        }
+    
+    }
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer__up {
+        background: url("../../public/images/bg-boost-desktop.svg") #3b3054 no-repeat;
+        background-size: cover;
+        width: 100%;
+
+        text-align: center;
+
+        padding: 50px 0;
+        
+        h1 {
+            color: #f5f5f5;
+        }
+
+        button {
+            font-size: 15px;
+            padding: 10px 30px;
+            border-radius: 25px;
+            text-transform: capitalize;
+            color: #f5f5f5;
+            background-color: #2acfcf;
+
+            border: none;
+            outline: none;
+
+            margin-top: 20px;
+
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: #9de3e2;
+        }
+    }
+
+    .footer__down {
+        width: 100%;
+        background-color: #232127;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .footer__l {
+            color: #f5f5f5;
+            margin-left: 100px;
+
+            padding: 50px 0;
+        }
+
+        .footer__r {
+            display: flex;
+            margin-right: 100px;
+
+            padding: 50px 0;
+
+            .footer__list {
+                display: flex;
+                justify-content: space-evenly;
+
+                color: #f5f5f5;
+
+                margin-right: 50px;
+                
+                ul {
+                    margin: 0 50px;
+
+                    h6 {
+                        font-size: 17px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+    
+                    li {
+                        font-weight: 300;
+                        list-style-type: none;
+                        color: #9e9aa7;
+                        font-size: 15px;
+                        margin: 7px 0;
+
+                        cursor: pointer;
+                    }
+
+                    li:active {
+                        color: #2acfcf;
+                    }
+                }
+            }
+
+            .footer__social {
+
+                svg {
+                    cursor: pointer;
+                    margin: 0 10px;
+                }
+
+                path:active {
+                    fill: #2acfcf;
+                }
+            }
+        }
+    }
+}
