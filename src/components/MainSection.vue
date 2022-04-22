@@ -7,9 +7,6 @@
                 inputText: '',
                 errText: 'Please add a link',
 
-                shortened: 'test',
-                original: 'test2',
-
                 shortList: [],
                 localList: []
             }
@@ -73,11 +70,11 @@
 <template>
     <section class="main">
         <div class="main__landing">
-            <div class="main__text">
-                <h1></h1>
+            <div id="HREFInput" class="main__text">
+                <h1>More than just shorter links</h1>
                 <h5>Build your brand's recognition and get 
                     detailed insights on how your links are performing.</h5>
-                <a href="#"><button>Get Started</button></a>
+                <a href="#HREFInput"><button>Get Started</button></a>
             </div>
             <div class="main__img">
                 <img src="../../public/images/illustration-working.svg" alt="illustration">
@@ -97,7 +94,7 @@
             <div class="shortened__wrapper" v-for="item in localList" :key="item">
                 <p class="shortened__original">{{ item.original }}</p>
                 <div class="shortened__l">
-                    <p class="shortened__active">{{ item.shortened }}</p>
+                    <a v-bind:href="`${item.shortened}`" target="__blank"><p class="shortened__active">{{ item.shortened }}</p></a>
                     <button class="shortened__copy" v-on:click="copy(item, $event)">Copy</button>
                 </div>
             </div>
