@@ -12,12 +12,13 @@ body {
     font-size: 18px;
     overflow-x: hidden;
 
-    h1,h2,h3,h4,h5,h6,p,span,strong {
+    h1,h2,h3,h4,h2,h6,p,span,strong {
         margin: 0;
         padding: 0;
     }
 
     a {
+        color: unset;
         text-decoration: none;
     }
 
@@ -212,7 +213,7 @@ body {
                 line-height: 1.2;
             }
     
-            h5 {
+            h2 {
                 font-size: 17px;
                 color: #9e9aa7;
                 font-weight: 500;
@@ -445,7 +446,8 @@ body {
                 font-size: 35px;
             }
     
-            h5 {
+            h2 {
+                font-size: 15px;
                 margin-top: 10px;
                 max-width: 430px;
                 color: #9e9aa7;
@@ -544,7 +546,7 @@ body {
                     }
                 }
     
-                h4 {
+                h3 {
                     text-transform: capitalize;
                     color: #232127;
                     font-size: 20px;
@@ -686,34 +688,41 @@ body {
 
                 @media screen and (max-width: 355px) {
                     flex-direction: column;
-                    margin-right: 20px;
+                    margin-right: 0px;
+                    margin-left: 20px;
                 }
                 
-                ul {
+                .footer__list-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
                     margin: 0 50px;
 
                     @media screen and (max-width: 895px) {
                         margin: 0 10px;
                     }
 
-                    h6 {
-                        font-size: 17px;
-                        font-weight: 500;
-                        margin-bottom: 20px;
-                    }
+                    ul {
+                        padding: 0;
     
-                    li {
-                        font-weight: 300;
-                        list-style-type: none;
-                        color: #9e9aa7;
-                        font-size: 15px;
-                        margin: 7px 0;
-
-                        cursor: pointer;
-                    }
-
-                    li:active {
-                        color: #2acfcf;
+                        h4 {
+                            font-size: 17px;
+                            font-weight: 500;
+                            margin-bottom: 20px;
+                        }
+        
+                        li {
+                            font-weight: 300;
+                            list-style-type: none;
+                            color: #9e9aa7;
+                            font-size: 15px;
+                            margin: 7px 0;
+                            cursor: pointer;
+                        }
+    
+                        li:active {
+                            color: #2acfcf;
+                        }
                     }
                 }
             }
