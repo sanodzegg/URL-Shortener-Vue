@@ -17,7 +17,7 @@
       <div class="navbar__l">
         <h1 class="navbar__logo">Shortly</h1>
         <ul class="navbar__navigation">
-            <li>Features</li>
+            <li><a href="#featuresSection" aria-label="Scroll to the features section">Features</a></li>
             <li>Pricing</li>
             <li>Resources</li>
         </ul>

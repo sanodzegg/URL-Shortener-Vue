@@ -34,7 +34,7 @@ body h1,
 body h2,
 body h3,
 body h4,
-body h5,
+body h2,
 body h6,
 body p,
 body span,
@@ -43,6 +43,7 @@ body strong {
   padding: 0;
 }
 body a {
+  color: unset;
   text-decoration: none;
 }
 body button {
@@ -206,7 +207,7 @@ body button {
   max-width: 500px;
   line-height: 1.2;
 }
-.main .main__landing .main__text h5 {
+.main .main__landing .main__text h2 {
   font-size: 17px;
   color: #9e9aa7;
   font-weight: 500;
@@ -399,7 +400,8 @@ body button {
   text-align: center;
   font-size: 35px;
 }
-.beforeFooter .beforeFooter__main .adv__text h5 {
+.beforeFooter .beforeFooter__main .adv__text h2 {
+  font-size: 15px;
   margin-top: 10px;
   max-width: 430px;
   color: #9e9aa7;
@@ -495,7 +497,7 @@ body button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.beforeFooter .beforeFooter__main .adv__wrapper .adv__box h4 {
+.beforeFooter .beforeFooter__main .adv__wrapper .adv__box h3 {
   text-transform: capitalize;
   color: #232127;
   font-size: 20px;
@@ -623,23 +625,30 @@ body button {
 @media screen and (max-width: 355px) {
   .footer .footer__down .footer__r .footer__list {
     flex-direction: column;
-    margin-right: 20px;
+    margin-right: 0px;
+    margin-left: 20px;
   }
 }
-.footer .footer__down .footer__r .footer__list ul {
+.footer .footer__down .footer__r .footer__list .footer__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 0 50px;
 }
 @media screen and (max-width: 895px) {
-  .footer .footer__down .footer__r .footer__list ul {
+  .footer .footer__down .footer__r .footer__list .footer__list-wrapper {
     margin: 0 10px;
   }
 }
-.footer .footer__down .footer__r .footer__list ul h6 {
+.footer .footer__down .footer__r .footer__list .footer__list-wrapper ul {
+  padding: 0;
+}
+.footer .footer__down .footer__r .footer__list .footer__list-wrapper ul h4 {
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-.footer .footer__down .footer__r .footer__list ul li {
+.footer .footer__down .footer__r .footer__list .footer__list-wrapper ul li {
   font-weight: 300;
   list-style-type: none;
   color: #9e9aa7;
@@ -647,7 +656,7 @@ body button {
   margin: 7px 0;
   cursor: pointer;
 }
-.footer .footer__down .footer__r .footer__list ul li:active {
+.footer .footer__down .footer__r .footer__list .footer__list-wrapper ul li:active {
   color: #2acfcf;
 }
 .footer .footer__down .footer__r .footer__social svg {

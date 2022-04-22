@@ -72,9 +72,9 @@
         <div class="main__landing">
             <div id="HREFInput" class="main__text">
                 <h1>More than just shorter links</h1>
-                <h5>Build your brand's recognition and get 
-                    detailed insights on how your links are performing.</h5>
-                <a href="#HREFInput"><button>Get Started</button></a>
+                <h2>Build your brand's recognition and get 
+                    detailed insights on how your links are performing.</h2>
+                <a href="#HREFInput" aria-label="Scroll to the link shortening section"><button>Get Started</button></a>
             </div>
             <div class="main__img">
                 <img src="../../public/images/illustration-working.svg" alt="illustration">
@@ -94,7 +94,7 @@
             <div class="shortened__wrapper" v-for="item in localList" :key="item">
                 <p class="shortened__original">{{ item.original }}</p>
                 <div class="shortened__l">
-                    <a v-bind:href="`${item.shortened}`" target="__blank"><p class="shortened__active">{{ item.shortened }}</p></a>
+                    <a v-bind:href="`${item.shortened}`" target="_blank"><p class="shortened__active">{{ item.shortened }}</p></a>
                     <button class="shortened__copy" v-on:click="copy(item, $event)">Copy</button>
                 </div>
             </div>
