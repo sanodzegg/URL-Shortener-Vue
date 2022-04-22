@@ -74,7 +74,7 @@
                 <h1>More than just shorter links</h1>
                 <h2>Build your brand's recognition and get 
                     detailed insights on how your links are performing.</h2>
-                <a href="#HREFInput" aria-label="Scroll to the link shortening section"><button>Get Started</button></a>
+                <button><a href="#HREFInput" aria-label="Scroll to the link shortening section">Get Started</a></button>
             </div>
             <div class="main__img">
                 <img src="../../public/images/illustration-working.svg" alt="illustration">
