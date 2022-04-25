@@ -49,6 +49,20 @@ body a {
 body button {
   font-family: 'Poppins', sans-serif;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #9e9aa731;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2acfcf;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #35e2e2;
+}
 .burger__display {
   max-width: 320px;
   margin: 0 auto;
