@@ -29,12 +29,10 @@
                     this.error = false;
                     fetch(`https://api.shrtco.de/v2/shorten?url=${this.inputText}`).then(res => res.json())
                     .then(data => {
-
                         let dataToPush =  {
                             original:data.result.original_link,
                             shortened:data.result.full_short_link
                         };
-
                         if(data.ok == true) {
                             this.error = false;
                             this.shortList.push(dataToPush);
