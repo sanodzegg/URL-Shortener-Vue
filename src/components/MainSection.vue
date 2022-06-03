@@ -89,7 +89,7 @@
         </div>
 
         <div class="shortened__list">
-            <div class="shortened__wrapper" v-for="item in localList" :key="item">
+            <div class="shortened__wrapper" v-for="item in localList.slice().reverse()" :key="item">
                 <p class="shortened__original">{{ item.original }}</p>
                 <div class="shortened__l">
                     <a v-bind:href="`${item.shortened}`" target="_blank"><p class="shortened__active">{{ item.shortened }}</p></a>
